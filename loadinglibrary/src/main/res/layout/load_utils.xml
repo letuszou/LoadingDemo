@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_page_loading"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading_image"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_data_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/view_no_data" />
+
+        <TextView
+            android:id="@+id/tv_no_data_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:text="无数据,点击重新加载"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
